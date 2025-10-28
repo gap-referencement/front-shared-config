@@ -1,0 +1,45 @@
+{
+  "name": "@gap-referencement/front-shared-config",
+  "version": "1.0.0",
+  "description": "Shared ESLint config for all manager front projets",
+  "license": "ISC",
+  "author": "all-manager",
+  "type": "module",
+  "main": "index.js",
+  "repository": "https://github.com/gap-referencement/front-shared-config.git",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "allmanager",
+    "react"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.35.0",
+    "@babel/eslint-parser": ">=7.28.5",
+    "eslint-formatter-checkstyle": ">=9.0.1",
+    "eslint-formatter-rdjson": ">=1.0.6",
+    "eslint-import-resolver-typescript": ">=4.4.4"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^8.46.2",
+    "@typescript-eslint/typescript-estree": "^8.29.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "typescript-eslint": "^8.46.2"
+  }
+}
