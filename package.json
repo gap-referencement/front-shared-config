@@ -1,6 +1,6 @@
 {
   "name": "@gap-referencement/front-shared-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared ESLint config for all manager front projets",
   "license": "ISC",
   "author": "all-manager",
@@ -21,8 +21,8 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
-    "eslint": ">=9.35.0",
     "@babel/eslint-parser": ">=7.28.5",
+    "eslint": ">=9.35.0",
     "eslint-formatter-checkstyle": ">=9.0.1",
     "eslint-formatter-rdjson": ">=1.0.6",
     "eslint-import-resolver-typescript": ">=4.4.4"
@@ -34,6 +34,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
