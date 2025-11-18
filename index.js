@@ -1,8 +1,6 @@
 import stylistic from '@stylistic/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import {defineConfig} from 'eslint/config';
-import prettier from 'eslint-config-prettier';
-import prettierFlat from 'eslint-config-prettier/flat';
 import {importX} from 'eslint-plugin-import-x';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
@@ -14,7 +12,7 @@ import unusedImportsPlugin from 'eslint-plugin-unused-imports';
 import {configs as tsConfigs, plugin as tsPlugin} from 'typescript-eslint';
 
 export default defineConfig({
-  extends: [stylistic.configs.recommended, ...tsConfigs.recommended, importX.flatConfigs.recommended, importX.flatConfigs.typescript, reactRefresh.configs.recommended, prettierFlat,],
+  extends: [stylistic.configs.recommended, ...tsConfigs.recommended, importX.flatConfigs.recommended, importX.flatConfigs.typescript, reactRefresh.configs.recommended],
   languageOptions: {
     parserOptions: {
       warnOnUnsupportedTypeScriptVersion: false,
@@ -25,7 +23,6 @@ export default defineConfig({
     '@typescript-eslint': tsPlugin,
     'import-x': importX,
     'jsx-a11y': jsxA11yPlugin,
-    'prettier': prettier,
     'react': reactPlugin,
     'react-hooks': reactHookPlugin,
     'simple-import-sort': simpleImportSort,
