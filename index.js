@@ -79,6 +79,7 @@ export default defineConfig({
       allowArrowFunction: true,
     },],
     'import-x/no-duplicates': 'error',
+    'import-x/no-named-as-default-member': 'off',
     'import-x/no-relative-packages': 'error',
     'import-x/no-relative-parent-imports': 'off',
     'jsx-a11y/accessible-emoji': 'off',
