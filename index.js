@@ -10,6 +10,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import noRelativeImportPaths from 'eslint-plugin-no-relative-import-paths';
 import unusedImportsPlugin from 'eslint-plugin-unused-imports';
 import {configs as tsConfigs, plugin as tsPlugin} from 'typescript-eslint';
+import noReactImport from "./eslint-rules/no-react-import.js";
 
 export default defineConfig({
   extends: [stylistic.configs.recommended, ...tsConfigs.recommended, importX.flatConfigs.recommended, importX.flatConfigs.typescript, reactRefresh.configs.recommended],
@@ -28,6 +29,7 @@ export default defineConfig({
     'simple-import-sort': simpleImportSort,
     'unused-imports': unusedImportsPlugin,
     'no-relative-import-paths': noRelativeImportPaths,
+    'no-react-import': noReactImport,
   },
   rules: {
     '@stylistic/arrow-parens': ['error', 'always'],
@@ -97,6 +99,7 @@ export default defineConfig({
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
     'typescript-eslint/no-use-before-define': 0,
+    'allmanager/no-react-import': 'error',
   },
   settings: {
     'import-x/resolver': {
