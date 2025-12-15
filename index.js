@@ -76,6 +76,7 @@ export default defineConfig({
       varsIgnorePattern: '^_',
       ignoreRestSiblings: true,
     },],
+    curly: ['error', 'all'],
     'import-x/newline-after-import': 'error',
     'import-x/no-anonymous-default-export': [2, {
       allowArrowFunction: true,
