@@ -1,6 +1,6 @@
 {
   "name": "@gap-referencement/front-shared-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared ESLint config for all manager front projets",
   "license": "ISC",
   "author": "all-manager",
