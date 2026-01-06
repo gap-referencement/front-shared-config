@@ -1,4 +1,4 @@
-import noReactImport from './eslint-rules/no-react-import';
+import noReactImport from './eslint-rules/no-react-import.js';
 
 export default {
   meta: {
